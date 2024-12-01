@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:tns="http://www.zut.edu.pl/springsoap/gen"
+targetNamespace="http://www.zut.edu.pl/springsoap/gen"
+elementFormDefault="qualified">
+<xsd:element name="getUserRequest">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+<xsd:element name="getUserResponse">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="user" type="tns:user"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="user">
+	<xsd:sequence>
+		<xsd:element name="name" type="xsd:string"/>
+		<xsd:element name="email" type="xsd:string"/>
+		<xsd:element name="file" type="xsd:hexBinary"/>
+	</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>
