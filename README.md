@@ -8,7 +8,14 @@ This project is a setup of university tasks, that were implementing SpringBoot a
 - Generating WSDL
 - Mail communication
 - Setting up SWAGGER UI
-- using endpoints with Postman 
+- using endpoints with Postman
+- Oath 2 authorization
+
+# State of the app
+
+As some of the progress of the project was lost due to not implementing source control current version has following issues:
+- Mails are not sending
+- SOAP problems
 
 # basic start
 In order to start the database do:
